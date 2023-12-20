@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 
-.app{
+.app {
     height: 2000px;
 }
 
@@ -65,8 +65,24 @@ img {
     cursor: pointer;
 }
 
-.desc{
+.desc {
     color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66667;
+}
+
+.section-heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    margin-top: 18px;
+    color: #575F66;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.66667;
@@ -238,41 +254,120 @@ img {
     margin-top: 22px;
 }
 
-.hero__book{
+.hero__book {
     margin-top: 38px;
     display: flex;
     align-items: center;
 }
 
-.hero__infor{
+.hero__infor {
     margin-left: 38px;
     color: #FFF;
-font-weight: 400;
+    font-weight: 400;
 }
 
 .hero__media {
     width: 56%;
 }
 
-.hero__images{
+.hero__images {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.hero__img{
+.hero__img {
     width: 330px;
     height: 540px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.hero__img--small{
+.hero__img--small {
     width: 210px;
     height: 410px;
 }
 
-.hero__img--high{
+.hero__img--high {
     position: relative;
     margin-right: -6px;
+}
+
+/* Service */
+.service {
+    padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    width: 468px;
+    margin: 0 auto;
+}
+
+.service__img{
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.service__list {
+    margin-left: 130px;
+}
+
+.service-item {
+    display: flex;
+    width: 470px;
+    height: 128px;
+    padding: 20px 22px 21px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.service-item:hover{
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.25s;
+}
+
+.service-item:hover .service-item__icon{
+    color: #fff;
+    background: #2E80CE;
+}
+
+.service-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #EFF6FD;
+    transition: all ease 0.25s;
+}
+
+.service-item__content {
+    margin-left: 19px;
+}
+
+.service-item__heading {
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575F66;
 }
