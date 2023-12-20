@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -5,6 +9,17 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+:root {
+    --padding-sticky: 22px;
+    --padding-header: 16px;
+    --header-height: 45.6px;
+}
+
+
+.app{
+    height: 2000px;
 }
 
 /* Common */
@@ -31,7 +46,7 @@ img {
 .btn {
     --background: #2E80CE;
 
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     min-width: 205px;
@@ -42,25 +57,38 @@ img {
     color: #FFF;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.66667; 
+    line-height: 1.66667;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.9;
     cursor: pointer;
 }
 
-/* Header */
-.header {
-    height: 100vh;
-    background: #10375C;
+.desc{
+    color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66667;
 }
 
-.header-top {
+/* Header */
+.header {
+    padding-top: 22px;
+    background: #10375C;
+    z-index: 1;
+}
+
+.header--sticky {
+    position: sticky;
+    top: -22px;
+}
+
+.header__body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 38px;
+    padding: 8px 0;
 }
 
 .logo {
@@ -119,6 +147,7 @@ img {
     padding: 6px 21px;
     color: #C9D2DA;
     text-align: center;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75;
 }
@@ -163,9 +192,15 @@ img {
     align-items: center;
 }
 
-.authen__login {
+.authen__login.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 104px;
+    height: 44px;
     margin-right: 8px;
-    padding: 8px 20px;
+    padding: 0;
+    color: #fff;
 }
 
 .authen__signup {
@@ -173,4 +208,71 @@ img {
     min-width: 104px;
     font-size: 1.6rem;
     line-height: 1.75;
+}
+
+/* Hero */
+.hero {
+    height: calc(100vh - var(--padding-sticky) - var(--header-height) - var(--padding-header));
+    padding: 76px 0 0;
+    background: #10375C;
+}
+
+.hero__body {
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    width: 44%;
+}
+
+.hero__heading {
+    color: #FFF;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14286;
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-top: 22px;
+}
+
+.hero__book{
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__infor{
+    margin-left: 38px;
+    color: #FFF;
+font-weight: 400;
+}
+
+.hero__media {
+    width: 56%;
+}
+
+.hero__images{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__img{
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero__img--small{
+    width: 210px;
+    height: 410px;
+}
+
+.hero__img--high{
+    position: relative;
+    margin-right: -6px;
 }
