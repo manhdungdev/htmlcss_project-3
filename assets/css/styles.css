@@ -4,12 +4,13 @@
 
 html {
     font-size: 62.5%;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
-    text-rendering: optimizeSpeed;
 }
 
 :root {
@@ -19,11 +20,6 @@ body {
 
     --width: 370px;
     --height: 402px;
-}
-
-
-.app {
-    height: 5000px;
 }
 
 /* Common */
@@ -146,6 +142,7 @@ img {
     display: inline-flex;
     position: relative;
     font-size: 1rem;
+    font-family: 'Sora', sans-serif;
 }
 
 .logo__circle::before,
@@ -665,17 +662,17 @@ img {
     transition: all ease 0.25s;
 }
 
-.news-item:hover{
+.news-item:hover {
     cursor: pointer;
     transform: translateY(-16px);
     box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.1);
 }
 
-.news-item:hover .news-item__infor{
+.news-item:hover .news-item__infor {
     border-color: transparent;
 }
 
-.news-item:hover .news-item__learn{
+.news-item:hover .news-item__learn {
     color: #2E80CE;
 }
 
@@ -719,22 +716,22 @@ img {
 }
 
 /* Appointment */
-.appointment{
+.appointment {
     margin-top: 85px;
 }
 
-.appointment__body{
+.appointment__body {
     padding: 100px 70px;
     background: #F6FBFF;
     text-align: center;
 }
 
-.appointment__heading{
+.appointment__heading {
     position: relative;
     padding-bottom: 18px;
 }
 
-.appointment__heading::after{
+.appointment__heading::after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -748,12 +745,150 @@ img {
 
 }
 
-.appointment__desc{
+.appointment__desc {
     width: 617px;
     font-size: 1.6rem;
     margin: 18px auto 0;
 }
 
-.appointment__btn{
+.appointment__btn {
     margin-top: 38px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 170px;
+    padding: 100px 0 42px;
+    background: #10375C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer__infor {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 2.5fr;
+    gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    color: #A9B3BB;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.footer-item__heading {
+    color: #FFF;
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer-item__list {
+    margin-top: 20px;
+}
+
+.footer-item__link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #A9B3BB;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8714;
+    white-space: nowrap;
+}
+
+.footer-item__link:hover {
+    text-decoration: underline;
+}
+
+.footer-item--large {
+    margin-top: 18px;
+}
+
+.footer-item--large .footer-item__list {
+    margin-top: 24px;
+}
+
+.footer-item--large .footer-item__link {
+    margin-bottom: 14px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 28px;
+}
+
+.footer-socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #2E80CE;
+    transition: all ease 0.25s;
+}
+
+.footer-socials__link:hover {
+    background: #2E80CE;
+    color: #fff;
+}
+
+.footer-item__desc {
+    max-width: 273px;
+    margin-top: 20px;
+    color: #A9B3BB;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85714;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    outline: none;
+}
+
+.footer-form__input::placeholder {
+    color: #9CA8B1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85714;
+}
+
+.footer-form__submit {
+    height: 46px;
+    min-width: 108px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8571;
+}
+
+.footer__cpr-content {
+    margin-top: 28px;
+    border-top: 1px solid #406181;
+    padding-top: 28px;
+    color: #AAB3BA;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.857;
 }
