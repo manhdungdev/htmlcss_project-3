@@ -717,3 +717,43 @@ img {
     font-weight: 500;
     transition: all ease 0.25s;
 }
+
+/* Appointment */
+.appointment{
+    margin-top: 85px;
+}
+
+.appointment__body{
+    padding: 100px 70px;
+    background: #F6FBFF;
+    text-align: center;
+}
+
+.appointment__heading{
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.appointment__heading::after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background: #2E80CE;
+
+}
+
+.appointment__desc{
+    width: 617px;
+    font-size: 1.6rem;
+    margin: 18px auto 0;
+}
+
+.appointment__btn{
+    margin-top: 38px;
+}
