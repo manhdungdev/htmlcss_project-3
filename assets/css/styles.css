@@ -260,7 +260,7 @@ img {
 
 /* Hero */
 .hero {
-    height: calc(100vh - var(--padding-sticky) - var(--header-height) - var(--padding-header));
+    min-height: calc(100vh - var(--padding-sticky) - var(--header-height) - var(--padding-header));
     padding: 76px 0 0;
     background: #10375C;
 }
