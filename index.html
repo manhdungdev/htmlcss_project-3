@@ -35,6 +35,12 @@
     <link rel="stylesheet" href="assets/css/reset.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 </head>
 
 <body>
@@ -88,7 +94,10 @@
                 <div class="container">
                     <div class="hero__body">
                         <section class="hero__content">
-                            <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
+                            <!-- <h1 class="hero__heading animate__animated animate__bounce">Exceptional dental care for all
+                                ages.</h1> -->
+                            <h1 class="hero__heading" data-aos="animate__shakeY">Exceptional dental care for all
+                                ages.</h1>
                             <p class="desc hero__desc">Exceptional dental care for all ages. Your great smile begins
                                 with a great dentist.</p>
                             <div class="hero__book">
@@ -116,7 +125,10 @@
                         with a great dentist.</p>
                     <div class="service__row">
                         <figure class="service_images">
-                            <img loading="lazy" src="assets/img/service.jpg" alt="" class="service__img">
+                            <img loading="lazy" src="assets/img/service.jpg" alt=""
+                                class="service__img" data-aos="animate__slideInLeft"
+                                data-aos-once="true">
+
                         </figure>
                         <div>
                             <div class="service__list">
@@ -519,8 +531,26 @@
         </footer>
     </div>
 
+    <!-- WowJs -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW(
+            {
+                animateClass: 'animate__animated', // default
+            }).init();
+    </script> -->
 
-
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            useClassNames: true,
+            initClassName: null,
+            animatedClassName: "animate__animated",
+        });
+    </script>
 </body>
 
 </html>
