@@ -23,12 +23,12 @@ body {
 }
 
 /* Common */
-[data-aos] {
+/* [data-aos] {
     visibility: hidden;
 }
 [data-aos].animate__animated {
     visibility: visible;
-}
+} */
 
 a {
     text-decoration: none;
